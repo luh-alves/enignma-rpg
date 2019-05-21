@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class MenuInicial {
 
-    public void mostrarOpcoes() {
+    public static void mostrarOpcoes() {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("\n----------------Menu do Jogo------------------- \n"

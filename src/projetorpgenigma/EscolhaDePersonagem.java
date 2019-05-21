@@ -1,6 +1,7 @@
 package projetorpgenigma;
 
 import java.util.Scanner;
+import projetorpgenigma.personagens.Joan;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -13,7 +14,7 @@ import java.util.Scanner;
  */
 public class EscolhaDePersonagem {
 
-    public void escolherPersonagem() {
+    public static void escolherPersonagem() {
         Scanner entrada = new Scanner(System.in);
         int opcao;
 
@@ -36,6 +37,9 @@ public class EscolhaDePersonagem {
                             + "\nmas mesmo assim recebia menos do que seus colegas homens: 2 libras por semana."
                             + "\nDepois de passar alguns dias trabalhando isolada no projeto Enigma, finalmente "
                             + "\nganhou uma mesa ao lado de Turing e outros cientistas da época.");
+                    
+                    Joan.jogar();
+                    
                     return;
                 case 2:
                     System.out.println("Alan Turing, um matemático, de perfil extremamente introspectivo "

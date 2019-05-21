@@ -14,33 +14,32 @@ import java.util.Scanner;
 public class Login {
 
     public  void cadastrar() {
-        Scanner entrada = new Scanner(System.in);
-        System.out.print("Crie seu login: ");
-        String login = entrada.next();
-        System.out.print("Crie sua senha: ");
-        int senha = entrada.nextInt();
+//        Scanner entrada = new Scanner(System.in);
+//        System.out.print("Crie seu login: ");
+//        String login = entrada.next();
+//        System.out.print("Crie sua senha: ");
+//        int senha = entrada.nextInt();
+//
+//        String loginCadastrado;
+//        int senhaCadastrado;
+//
+//        do {
+//            System.out.println("Digite seu login: ");
+//            loginCadastrado = entrada.next();
+//            if (!(login.equals(loginCadastrado))) {
+//                System.out.println("Login incorreto!");
+//            }
+//        } while (!(login.equals(loginCadastrado)));
+//
+//        do {
+//            System.out.println("Digite sua senha: ");
+//            senhaCadastrado = entrada.nextInt();
+//            if (!(senhaCadastrado == senha)) {
+//                System.out.println("Senha incorreta!");
+//            }
+//        } while (!(senhaCadastrado == senha));
 
-        String loginCadastrado;
-        int senhaCadastrado;
-
-        do {
-            System.out.println("Digite seu login: ");
-            loginCadastrado = entrada.next();
-            if (!(login.equals(loginCadastrado))) {
-                System.out.println("Login incorreto!");
-            }
-        } while (!(login.equals(loginCadastrado)));
-
-        do {
-            System.out.println("Digite sua senha: ");
-            senhaCadastrado = entrada.nextInt();
-            if (!(senhaCadastrado == senha)) {
-                System.out.println("Senha incorreta!");
-            }
-        } while (!(senhaCadastrado == senha));
-
-        MenuInicial menu = new MenuInicial();
-        menu.mostrarOpcoes();
+        MenuInicial.mostrarOpcoes();
 
     }
 
